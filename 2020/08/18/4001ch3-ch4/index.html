@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Topic 3 Agile software development大多软件系统要求rapid development and delivery，但plan-driven development不满足这个需求。 Agile:  Program specification, design and implementation are inter-leaved.  The system is deve">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4001ch3&amp;ch4">
+<meta property="og:url" content="http://yoursite.com/2020/08/18/4001ch3-ch4/index.html">
+<meta property="og:site_name" content="XXXX">
+<meta property="og:description" content="Topic 3 Agile software development大多软件系统要求rapid development and delivery，但plan-driven development不满足这个需求。 Agile:  Program specification, design and implementation are inter-leaved.  The system is deve">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816173127140.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816174449328.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816190652453.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816191150479.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816191203860.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816211203305.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816211220312.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816211825833.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816212154248.png?lastModify=1597739918">
+<meta property="og:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816212930311.png?lastModify=1597739918">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200818190702601.png">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200818190757100.png">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200818191212675.png">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200818191351172.png">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200818191615636.png">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200818192646069.png">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200818194310445.png">
+<meta property="article:published_time" content="2020-08-18T16:38:04.000Z">
+<meta property="article:modified_time" content="2020-08-18T12:39:14.678Z">
+<meta property="article:author" content="xxx_xiang">
+<meta property="article:tag" content="csc4001">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816173127140.png?lastModify=1597739918">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>4001ch3&amp;ch4</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 5.0.2"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2020/08/18/csc4001-ch1-ch2/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2020/08/18/hello-world/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2020/08/18/4001ch3-ch4/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&text=4001ch3&amp;ch4"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&is_video=false&description=4001ch3&amp;ch4"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=4001ch3&amp;ch4&body=Check out this article: http://yoursite.com/2020/08/18/4001ch3-ch4/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&name=4001ch3&amp;ch4&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/08/18/4001ch3-ch4/&t=4001ch3&amp;ch4"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Topic-3-Agile-software-development"><span class="toc-number">1.</span> <span class="toc-text">Topic 3 Agile software development</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Agile-methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Agile methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Agile-manifesto"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Agile manifesto</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Priciples-of-agile-methods"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">Priciples of agile methods</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E5%BA%94%E7%94%A8%E4%BA%8E"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">主要应用于</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Agile-development-techniques"><span class="toc-number">1.0.2.</span> <span class="toc-text">Agile development techniques</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Extreme-Programming"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">Extreme Programming</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#User-stories-for-specification"><span class="toc-number">1.0.2.1.1.</span> <span class="toc-text">- User stories for specification</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Refactoring"><span class="toc-number">1.0.2.1.2.</span> <span class="toc-text">- Refactoring</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Test-first-development"><span class="toc-number">1.0.2.1.3.</span> <span class="toc-text">- Test-first development</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Pair-programming"><span class="toc-number">1.0.2.1.4.</span> <span class="toc-text">- Pair programming</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Agile-project-management"><span class="toc-number">1.0.3.</span> <span class="toc-text">Agile project management</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scrum"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">Scrum</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Scrum-terminology%E6%9C%AF%E8%AF%AD"><span class="toc-number">1.0.3.1.1.</span> <span class="toc-text">Scrum terminology术语</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Scrum-sprint-cycle"><span class="toc-number">1.0.3.1.2.</span> <span class="toc-text">Scrum sprint cycle</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84Scrum"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">分布式的Scrum</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Scaling-agile-methods"><span class="toc-number">1.0.4.</span> <span class="toc-text">Scaling agile methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Practical-problems-with-agile-methods"><span class="toc-number">1.0.4.1.</span> <span class="toc-text">- Practical problems with agile methods</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Agile-and-plan-driven-methods"><span class="toc-number">1.0.4.2.</span> <span class="toc-text">- Agile and plan-driven methods</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Agile-methods-for-large-systems"><span class="toc-number">1.0.4.3.</span> <span class="toc-text">- Agile methods for large systems</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Agile-methods-across-organization"><span class="toc-number">1.0.4.4.</span> <span class="toc-text">- Agile methods across organization</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Key-points"><span class="toc-number">1.0.5.</span> <span class="toc-text">Key points</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        4001ch3&amp;ch4
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">XXXX</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-08-18T16:38:04.000Z" itemprop="datePublished">2020-08-18</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/csc4001/" rel="tag">csc4001</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Topic-3-Agile-software-development"><a href="#Topic-3-Agile-software-development" class="headerlink" title="Topic 3 Agile software development"></a>Topic 3 Agile software development</h1><p>大多软件系统要求rapid development and delivery，但plan-driven development不满足这个需求。</p>
+<p><strong>Agile:</strong></p>
+<ul>
+<li><p>Program specification, design and implementation are inter-leaved.</p>
+</li>
+<li><p>The system is developed as a series of version.</p>
+</li>
+<li><p>Frequent delivery of new versions for evaluation.</p>
+</li>
+<li><p>Extensive tool support used to support development. (Automated testing tools)</p>
+</li>
+<li><p>Minimal documentation - focus on working code</p>
+<p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816173127140.png?lastModify=1597739918" alt="image-20200816173127140"></p>
+</li>
+</ul>
+<p><strong>Plan-driven:</strong> separate development stage</p>
+<p><strong>Agile:</strong> interleaved</p>
+<h3 id="Agile-methods"><a href="#Agile-methods" class="headerlink" title="Agile methods"></a>Agile methods</h3><p><strong>Aim of agile methods:</strong> </p>
+<ul>
+<li>Reduce overheads in SW process</li>
+<li>Be able to resond quickly to changing requirements without excessive re-work</li>
+</ul>
+<h4 id="Agile-manifesto"><a href="#Agile-manifesto" class="headerlink" title="Agile manifesto"></a>Agile manifesto</h4><ul>
+<li>Individuals and interactions over processes and tools</li>
+<li>Working software over comprehensive documentation</li>
+<li>Customer collaboration over contract negotiation</li>
+<li>Responding to change over following a plan</li>
+</ul>
+<h4 id="Priciples-of-agile-methods"><a href="#Priciples-of-agile-methods" class="headerlink" title="Priciples of agile methods"></a>Priciples of agile methods</h4><p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816174449328.png?lastModify=1597739918" alt="image-20200816174449328"></p>
+<h4 id="主要应用于"><a href="#主要应用于" class="headerlink" title="主要应用于"></a>主要应用于</h4><ul>
+<li>Product development: a small/medium-sized product for scale</li>
+<li>Custome system development within an organization: customer summit to involve in the development process and there are few external rules and regulations.</li>
+</ul>
+<h3 id="Agile-development-techniques"><a href="#Agile-development-techniques" class="headerlink" title="Agile development techniques"></a>Agile development techniques</h3><h4 id="Extreme-Programming"><a href="#Extreme-Programming" class="headerlink" title="Extreme Programming"></a>Extreme Programming</h4><p><strong>A very influential agile method</strong></p>
+<p><strong>Extreme Programming (XP) takes an ‘extreme’ approach to iterative development</strong></p>
+<p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816190652453.png?lastModify=1597739918" alt="image-20200816190652453"></p>
+<p><strong>XP practices</strong></p>
+<p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816191150479.png?lastModify=1597739918" alt="image-20200816191150479"></p>
+<p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816191203860.png?lastModify=1597739918" alt="image-20200816191203860"></p>
+<p><strong>XP and agile principles:</strong> P43</p>
+<p>XP 很难作为一种实用的敏捷方法，敏捷开发采用XP实践，但不会完整地采用它。</p>
+<p><strong>Key practices</strong>:</p>
+<h5 id="User-stories-for-specification"><a href="#User-stories-for-specification" class="headerlink" title="- User stories for specification"></a>- User stories for specification</h5><p>User requirements are expressed as user stories or scenarios.</p>
+<p>These are written on cards and the development team break them down into implementation tasks.</p>
+<h5 id="Refactoring"><a href="#Refactoring" class="headerlink" title="- Refactoring"></a>- Refactoring</h5><p>changes cannot be reliably anticipated. Rather, it proposes constant code improvement (<strong>refactoring</strong>) to make changes easier when they have to be implemented.</p>
+<p>当看到可以改进的代码时，马上实施改进，即使这一改进并不紧迫。</p>
+<p>当有的changes需要architecture refactoring时会更贵。</p>
+<p><strong>例子</strong>：</p>
+<ul>
+<li>重构类的继承，去除重复代码</li>
+<li>对属性和方法整理并重命名</li>
+<li>通过调用程序库中定义的方法来代替代码</li>
+</ul>
+<h5 id="Test-first-development"><a href="#Test-first-development" class="headerlink" title="- Test-first development"></a>- Test-first development</h5><p><strong>Testing is central to XP</strong></p>
+<p><strong>XP testing features:</strong></p>
+<ul>
+<li>Test-first development<ul>
+<li>Writing tests before code clarifies the requirements to be implemented.</li>
+<li>Tests are written as programs rather than data so that they can be executed automatically.</li>
+<li>没有新功能增加，所有之前的和新的测试都会自动跑一遍。</li>
+</ul>
+</li>
+<li>Incremental test development from scenarios</li>
+<li>User involvement in test development and validation<ul>
+<li>帮助开发将在下一个开发中实现的user story 的acceptance test</li>
+</ul>
+</li>
+<li>Automated test harnesses are used to run all component tests each time that a new release is built<ul>
+<li>Test automation means that tests are written as executable components <strong>before the task is implemented</strong></li>
+<li>there is always a set of tests that can be quickly and easily executed</li>
+</ul>
+</li>
+</ul>
+<p><strong>Problems</strong></p>
+<ul>
+<li>程序员更喜欢编程而不是测试（可能在编写测试时走捷径，导致无法检查到一些异常情况）</li>
+<li>Some tests can be very difficult to write incrementally. (在复杂的UI中，为实现一些显示逻辑和屏幕见工作流的代码写测试会很困难)</li>
+<li>It difficult to judge the completeness of a set of tests.</li>
+</ul>
+<h5 id="Pair-programming"><a href="#Pair-programming" class="headerlink" title="- Pair programming"></a>- Pair programming</h5><p>programmers working in pairs, developing code together.</p>
+<p><strong>好处</strong>：</p>
+<ul>
+<li>This helps develop common ownership of code and spreads knowledge across the team. (无私编程的思想，软件由团队整体所有，个人不对代码中的问题负责)</li>
+<li>It serves as an informal review process as each line of code is looked at by more than 1 person.</li>
+<li>It encourages refactoring as the whole team can benefit from improving the system code. （因为有共同的所有权）</li>
+</ul>
+<p>两个人用同一台电脑开发</p>
+<ul>
+<li><p>Pairs are created dynamically （结对的程序员动态确定，让所有成员都能一起工作）</p>
+</li>
+<li><p>Sharing of knowledge during pair programming is very important.</p>
+</li>
+<li><p>Pair programming is <strong>not necessarily inefficient</strong></p>
+</li>
+</ul>
+<h3 id="Agile-project-management"><a href="#Agile-project-management" class="headerlink" title="Agile project management"></a>Agile project management</h3><p>SW项目管理人员的主要职责：确保项目是否满足目标并在预算范围内按时交付。</p>
+<p>The standard approach to project management is plan-driven.</p>
+<p>Agile project management requires a different approach</p>
+<h4 id="Scrum"><a href="#Scrum" class="headerlink" title="Scrum"></a>Scrum</h4><p>Scrum is an agile method that <strong>focuses on managing iterative development</strong> rather than specific agile practices.</p>
+<h5 id="Scrum-terminology术语"><a href="#Scrum-terminology术语" class="headerlink" title="Scrum terminology术语"></a>Scrum terminology术语</h5><p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816211203305.png?lastModify=1597739918" alt="image-20200816211203305"></p>
+<p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816211220312.png?lastModify=1597739918" alt="image-20200816211220312"></p>
+<h5 id="Scrum-sprint-cycle"><a href="#Scrum-sprint-cycle" class="headerlink" title="Scrum sprint cycle"></a>Scrum sprint cycle</h5><p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816211825833.png?lastModify=1597739918" alt="image-20200816211825833"></p>
+<p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816212154248.png?lastModify=1597739918" alt="image-20200816212154248"></p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>产品被分解称可管理、可理解、利益的小块</li>
+<li>不稳定的需求不会影响进度</li>
+<li>整个团队都对所有的一切保持可见，团队的交流沟通得到提升</li>
+<li>客户可以按时看到增量交付，并获得关于产品如何工作的反馈。</li>
+<li>客户和开发者之间建立了信任。</li>
+</ul>
+<h4 id="分布式的Scrum"><a href="#分布式的Scrum" class="headerlink" title="分布式的Scrum"></a>分布式的Scrum</h4><p><strong>（最初Scrum适用于同处一地的团队，每天可以一起参加站立式会议）</strong></p>
+<p><strong>针对分布式开发环境和多团队工作进行改进</strong></p>
+<p><img src="file:///Users/%E9%A1%B9%E5%90%9B%E6%9D%B0/Library/Application%20Support/typora-user-images/image-20200816212930311.png?lastModify=1597739918" alt="image-20200816212930311"></p>
+<h3 id="Scaling-agile-methods"><a href="#Scaling-agile-methods" class="headerlink" title="Scaling agile methods"></a>Scaling agile methods</h3><p>Agile 在由同一地点的团队开发的中小型项目非常成功。</p>
+<p>Scaling up agile methods to <strong>cope with larger, longer projects</strong> 由不同地方的开发团队开发的。</p>
+<ul>
+<li><strong>Scaling up:</strong> for <strong>developing large software</strong> that cannot be developed by a small team.</li>
+<li><strong>Scaling out:</strong> how agile methods can <strong>be introduced across a large organization</strong> with many years of software development experience.</li>
+</ul>
+<p>Scaling agile时需要保证agile的基本信息：<strong>Flexible planning, frequent system release, continuous integration, test-driven development and team communication</strong></p>
+<h4 id="Practical-problems-with-agile-methods"><a href="#Practical-problems-with-agile-methods" class="headerlink" title="- Practical problems with agile methods"></a>- Practical problems with agile methods</h4><ul>
+<li><p>agile 的非正式性与基于法律的合同定义不同</p>
+<ul>
+<li>许多合同是基于需求文档的，但agile没有。</li>
+</ul>
+</li>
+<li><p>agile适合于新的软件开发而不是软件维护</p>
+<ul>
+<li>大多组织在软件维护上花费比开发新软件更多</li>
+</ul>
+<p><strong>三个问题：</strong></p>
+<ul>
+<li>缺少产品文档（agile emphasis in the development process of minimizing formal documentation）</li>
+<li>保持客户参与（维护过程中变化并不持续发生，客户代表容易失去兴趣）</li>
+<li>开发团队的延续性（agile依赖于团队人员在没有文档的情况下理解系统的各个方面）</li>
+</ul>
+</li>
+<li><p>agile适合于小的、同处一地的团队。</p>
+</li>
+</ul>
+<h4 id="Agile-and-plan-driven-methods"><a href="#Agile-and-plan-driven-methods" class="headerlink" title="- Agile and plan-driven methods"></a>- Agile and plan-driven methods</h4><p><strong>Deciding on the balance of plan-driven and agile processes:</strong></p>
+<ul>
+<li>在开始之前有一个非常详细的规格说明和设计很重要吗？如果是，可能需要plan-driven</li>
+<li>增量交付策略，即向客户交付软件并获得来自他们的快速反馈现实吗？如果现实就考虑agile</li>
+<li>需要开发多大的系统？agile在系统由一个相对较小且处于同一地点、可以进行非正式交流的团队开发时最有效。大型的系统要求更大的开发团队，所以plan-driven方法可能被使用。</li>
+</ul>
+<hr>
+<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200818190702601.png" alt="image-20200818190702601" style="zoom:50%;">
+
+<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200818190757100.png" alt="image-20200818190757100" style="zoom:50%;">
+
+<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200818191212675.png" alt="image-20200818191212675" style="zoom:50%;">
+
+<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200818191351172.png" alt="image-20200818191351172" style="zoom:50%;">
+
+<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200818191615636.png" alt="image-20200818191615636" style="zoom:50%;">
+
+<h4 id="Agile-methods-for-large-systems"><a href="#Agile-methods-for-large-systems" class="headerlink" title="- Agile methods for large systems"></a>- Agile methods for large systems</h4><p><strong>问题：</strong></p>
+<ul>
+<li>large system are collections of separate, communicating systems， 独立团队分别开发每个系统（难以沟通）</li>
+<li>Large system are ‘brownfield systems’, 包含一些现有系统并与之交互（难以实现增量交付）。</li>
+<li>Where several systems are integrated to create a system, a significant fraction of the development is concerned with <strong>system configuration</strong> rather than original code development.</li>
+<li>system development processes are constrained by external rules and regulations</li>
+<li>Large system have long procurement and development time (团队难以长时间维持)</li>
+<li>large system have a diverse set of stakeholders (难有代表所有人的客户代表)</li>
+</ul>
+<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200818192646069.png" alt="image-20200818192646069" style="zoom:50%;">
+
+
+
+<p><strong>Scaling up to large system:</strong></p>
+<ul>
+<li>A completely incremental approach to requirements engineering is impossible. 需要一个初始的软件需求，开发人员通过需求来初步分工，之后的细节可以增量地开发</li>
+<li>There cannot be a single product owner or customer representative 不同的人参与系统的不同部分，他们必须在整个开发过程中持续第交流和协商</li>
+<li>For large systems development, it is not possible to focus only on the code of the system. 必须设计软件体系结构，必须产生一些描述系统关键方面的文档。</li>
+<li>Cross-team communication mechanisms have to be designed and used.</li>
+<li>Continuous integration is practically impossible</li>
+</ul>
+<p><strong>Multi-team Scrum 关键特性：</strong></p>
+<ul>
+<li><p>Role replication</p>
+<p>每个团队都有一个Product Owner 和 Scrum Master</p>
+</li>
+<li><p>Product architects</p>
+<p>每个团队一个Product architects，他们相互协作对整体的系统体系结构进行设计和演化</p>
+</li>
+<li><p>Release alignment</p>
+<p>对每个团队的产品发布日期进行同步</p>
+</li>
+<li><p>Scrum of Scrums</p>
+<p>Scrum团队之间每天进行站立式会议，来自各个团队的代表会面讨论进度、发现问题并且计划当前要做的工作。</p>
+</li>
+</ul>
+<h4 id="Agile-methods-across-organization"><a href="#Agile-methods-across-organization" class="headerlink" title="- Agile methods across organization"></a>- Agile methods across organization</h4><p>向organization引入agile的困难：</p>
+<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200818194310445.png" alt="image-20200818194310445" style="zoom:50%;">
+
+<h3 id="Key-points"><a href="#Key-points" class="headerlink" title="Key points"></a>Key points</h3><ul>
+<li><p>Agile methods are incremental development methods that <strong>focus on rapid SW development, frequent SW releases, reducing process overheads by minimizing documentation and producing high-quality code.</strong></p>
+<ul>
+<li><em>Agile development practices include</em> </li>
+<li><em>User stories for system specification</em> </li>
+<li><em>Frequent releases of the software</em></li>
+<li><em>Continuous software improvement</em></li>
+<li><em>Test-first development</em></li>
+<li><em>Customer participation in the development team.</em></li>
+</ul>
+</li>
+<li><p>Scrum is an agile method that <strong>provides a project management framework.</strong></p>
+</li>
+<li><p>Many practical development methods are a mixture of plan-based and agile development</p>
+</li>
+<li><p>Scaling agile methods for large systems is difficult.</p>
+</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Topic-3-Agile-software-development"><span class="toc-number">1.</span> <span class="toc-text">Topic 3 Agile software development</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Agile-methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Agile methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Agile-manifesto"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Agile manifesto</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Priciples-of-agile-methods"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">Priciples of agile methods</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E5%BA%94%E7%94%A8%E4%BA%8E"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">主要应用于</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Agile-development-techniques"><span class="toc-number">1.0.2.</span> <span class="toc-text">Agile development techniques</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Extreme-Programming"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">Extreme Programming</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#User-stories-for-specification"><span class="toc-number">1.0.2.1.1.</span> <span class="toc-text">- User stories for specification</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Refactoring"><span class="toc-number">1.0.2.1.2.</span> <span class="toc-text">- Refactoring</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Test-first-development"><span class="toc-number">1.0.2.1.3.</span> <span class="toc-text">- Test-first development</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Pair-programming"><span class="toc-number">1.0.2.1.4.</span> <span class="toc-text">- Pair programming</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Agile-project-management"><span class="toc-number">1.0.3.</span> <span class="toc-text">Agile project management</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scrum"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">Scrum</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Scrum-terminology%E6%9C%AF%E8%AF%AD"><span class="toc-number">1.0.3.1.1.</span> <span class="toc-text">Scrum terminology术语</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Scrum-sprint-cycle"><span class="toc-number">1.0.3.1.2.</span> <span class="toc-text">Scrum sprint cycle</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84Scrum"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">分布式的Scrum</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Scaling-agile-methods"><span class="toc-number">1.0.4.</span> <span class="toc-text">Scaling agile methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Practical-problems-with-agile-methods"><span class="toc-number">1.0.4.1.</span> <span class="toc-text">- Practical problems with agile methods</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Agile-and-plan-driven-methods"><span class="toc-number">1.0.4.2.</span> <span class="toc-text">- Agile and plan-driven methods</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Agile-methods-for-large-systems"><span class="toc-number">1.0.4.3.</span> <span class="toc-text">- Agile methods for large systems</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Agile-methods-across-organization"><span class="toc-number">1.0.4.4.</span> <span class="toc-text">- Agile methods across organization</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Key-points"><span class="toc-number">1.0.5.</span> <span class="toc-text">Key points</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2020/08/18/4001ch3-ch4/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&text=4001ch3&amp;ch4"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&is_video=false&description=4001ch3&amp;ch4"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=4001ch3&amp;ch4&body=Check out this article: http://yoursite.com/2020/08/18/4001ch3-ch4/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&title=4001ch3&amp;ch4"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/08/18/4001ch3-ch4/&name=4001ch3&amp;ch4&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/08/18/4001ch3-ch4/&t=4001ch3&amp;ch4"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2020
+    xxx_xiang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Topic 1  Intro- cost 软件高于硬件 on a PC cost more to maintain than develop SE is concerned with cost-effective software development.  - Failure原因 Increasing system complexity Failure to use SE method  Pro">
+<meta property="og:type" content="article">
+<meta property="og:title" content="csc4001 ch1&amp;ch2">
+<meta property="og:url" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/index.html">
+<meta property="og:site_name" content="XXXX">
+<meta property="og:description" content="Topic 1  Intro- cost 软件高于硬件 on a PC cost more to maintain than develop SE is concerned with cost-effective software development.  - Failure原因 Increasing system complexity Failure to use SE method  Pro">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814133947939.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814140221366.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814203853166.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814205148387.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814210903197.png">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200814211714079.png">
+<meta property="og:image" content="http://yoursite.com/Users/项君杰/Library/Application%20Support/typora-user-images/image-20200814212636886.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814213511772.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814215826571.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814220347114.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815102755198.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815103904135.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815104253226.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815111521890.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815115308831.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815115319685.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815115349082.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815115359067.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200815115412123.png">
+<meta property="article:published_time" content="2020-08-18T20:14:35.000Z">
+<meta property="article:modified_time" content="2020-08-18T12:39:14.678Z">
+<meta property="article:author" content="xxx_xiang">
+<meta property="article:tag" content="csc4001">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/08/18/csc4001-ch1-ch2/image-20200814133947939.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>csc4001 ch1&amp;ch2</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 5.0.2"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2020/08/18/4001ch3-ch4/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&text=csc4001 ch1&amp;ch2"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&is_video=false&description=csc4001 ch1&amp;ch2"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=csc4001 ch1&amp;ch2&body=Check out this article: http://yoursite.com/2020/08/18/csc4001-ch1-ch2/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&name=csc4001 ch1&amp;ch2&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&t=csc4001 ch1&amp;ch2"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Topic-1-Intro"><span class="toc-number">1.</span> <span class="toc-text">Topic 1  Intro</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cost"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">- cost</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Failure%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">- Failure原因</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Professional-software-development"><span class="toc-number">1.0.1.</span> <span class="toc-text">Professional software development</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Products"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">- Products</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Essential-attributes-of-good-software"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">- Essential attributes of good software</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%EF%BC%88%E5%85%B3%E9%94%AE%E8%AF%8D%EF%BC%89"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">- 定义（关键词）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E4%B8%AA%E5%BD%B1%E5%93%8D%E8%BD%AF%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">- 4个影响软件的问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SE-diversity"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">- SE diversity</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Web-based-SE"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">- Web-based SE</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Software-engineering-ethics"><span class="toc-number">1.0.2.</span> <span class="toc-text">Software engineering ethics</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Case-studies"><span class="toc-number">1.0.3.</span> <span class="toc-text">Case studies</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Topic2-Software-Processes-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">Topic2 Software Processes 软件工程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Software-process-models"><span class="toc-number">2.0.1.</span> <span class="toc-text">Software process models</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Waterfall-model%EF%BC%88%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B%EF%BC%89-Plan-driven-model-%E5%90%84%E9%98%B6%E6%AE%B5%E5%88%86%E5%BC%80"><span class="toc-number">2.0.1.0.1.</span> <span class="toc-text">- Waterfall model（瀑布模型）: Plan-driven model. 各阶段分开</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Incremental-development%EF%BC%88%E5%A2%9E%E9%87%8F%E5%BC%8F%E5%BC%80%E5%8F%91%EF%BC%89%EF%BC%9ASpecification-development-and-validation-are-interleaved-May-be-plan-driven-or-agile"><span class="toc-number">2.0.1.0.2.</span> <span class="toc-text">- Incremental development（增量式开发）：Specification, development and validation are interleaved. May be plan-driven or agile.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Integration-and-configuration%EF%BC%88%E9%9B%86%E6%88%90%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%89-The-system-is-assembled-from-existing-configurable-components-%EF%BC%88%E4%BE%9D%E8%B5%96%E4%BA%8E%E5%BC%80%E5%A4%8D%E7%94%A8%E7%9A%84%E6%9E%84%E4%BB%B6%E6%88%96%E7%B3%BB%E7%BB%9F%EF%BC%89May-be-plan-driven-or-agile"><span class="toc-number">2.0.1.0.3.</span> <span class="toc-text">- Integration and configuration（集成和配置）: The system is assembled from existing configurable components.  （依赖于开复用的构件或系统）May be plan-driven or agile.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Process-activities"><span class="toc-number">2.0.2.</span> <span class="toc-text">Process activities</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Requirements-engineering-process"><span class="toc-number">2.0.2.0.1.</span> <span class="toc-text">- Requirements engineering process</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Design-and-implementation"><span class="toc-number">2.0.2.0.2.</span> <span class="toc-text">- Design and implementation</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Validation-%EF%BC%88%E5%8F%88%E5%8F%ABverification-and-validation%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E7%AC%A6%E5%90%88specification%E5%92%8C%E6%98%AF%E5%90%A6%E7%AC%A6%E5%90%88requirements-of-system-customer%EF%BC%89"><span class="toc-number">2.0.2.0.3.</span> <span class="toc-text">- Validation （又叫verification and validation验证是否符合specification和是否符合requirements of system customer）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SW-evolution"><span class="toc-number">2.0.2.0.4.</span> <span class="toc-text">- SW evolution</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Coping-with-change"><span class="toc-number">2.0.3.</span> <span class="toc-text">Coping with change</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%A4%E7%A7%8D%E5%BA%94%E5%AF%B9%E5%8F%98%E5%8C%96%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">2.0.3.0.1.</span> <span class="toc-text">两种应对变化的方法：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#System-prototyping"><span class="toc-number">2.0.3.0.2.</span> <span class="toc-text">- System prototyping</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Incremental-delivery"><span class="toc-number">2.0.3.0.3.</span> <span class="toc-text">- Incremental delivery</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Process-improvement"><span class="toc-number">2.0.4.</span> <span class="toc-text">Process improvement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Review"><span class="toc-number">2.0.5.</span> <span class="toc-text">Review</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CH1"><span class="toc-number">2.0.5.1.</span> <span class="toc-text">CH1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CH2"><span class="toc-number">2.0.5.2.</span> <span class="toc-text">CH2</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        csc4001 ch1&amp;ch2
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">XXXX</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-08-18T20:14:35.000Z" itemprop="datePublished">2020-08-18</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/csc4001/" rel="tag">csc4001</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Topic-1-Intro"><a href="#Topic-1-Intro" class="headerlink" title="Topic 1  Intro"></a>Topic 1  Intro</h1><h4 id="cost"><a href="#cost" class="headerlink" title="- cost"></a>- cost</h4><ul>
+<li>软件高于硬件 on a PC</li>
+<li>cost more to maintain than develop</li>
+<li>SE is concerned with cost-effective software development.</li>
+</ul>
+<h4 id="Failure原因"><a href="#Failure原因" class="headerlink" title="- Failure原因"></a>- Failure原因</h4><ul>
+<li>Increasing system complexity</li>
+<li>Failure to use SE method</li>
+</ul>
+<h3 id="Professional-software-development"><a href="#Professional-software-development" class="headerlink" title="Professional software development"></a>Professional software development</h3><ul>
+<li><p><strong>What is software?</strong></p>
+<p>Computer programs and associated documentation.</p>
+</li>
+<li><p><strong>What are the attributes of good software?</strong></p>
+<ul>
+<li>deliver the required functionality and performance to the user.</li>
+<li>be maintainable.</li>
+<li>dependable and usable</li>
+</ul>
+</li>
+<li><p><strong>What is software engineering?</strong></p>
+<p>SE is an engineering <strong>discipline</strong> that is concerned with all aspects of software production.</p>
+</li>
+<li><p><strong>What are the fundamental software engineering activities?</strong></p>
+<ul>
+<li><em>specification</em>: <strong>define</strong></li>
+<li><em>development</em>: <strong>design and program</strong></li>
+<li><em>validation</em>: <strong>check</strong></li>
+<li><em>evolution</em>: <strong>modify</strong></li>
+<li><strong>Cost</strong><ul>
+<li>60% development, 40% testing.</li>
+</ul>
+</li>
+</ul>
+<hr>
+</li>
+<li><p><strong>What is the difference between software engineering and computer science?</strong></p>
+<p>Computer science focuses on theory and fundamentals; SE is concerned with the practicalities of developing and delivering useful software.</p>
+</li>
+<li><p><strong>What is the difference between software engineering and system engineering?</strong></p>
+<p>System Engineering is concerned with all aspects of computer-based systems development including hardware, software and process engineering. Software Engineering is part of this more general process.</p>
+</li>
+<li><p><strong>What are the best software engineering techniques and methods?</strong>  没有最好的</p>
+<p>Different techniques are appropriate for different types of system. You can’t,therefore, say that one method is better than another.</p>
+</li>
+<li><p><strong>What differences has the web made to software engineering?</strong></p>
+<p>led to the availability of software services, the possibility of developing highly distributed service based systems.</p>
+<p>led to important advances in programming languages and software reuse.</p>
+</li>
+</ul>
+<h4 id="Products"><a href="#Products" class="headerlink" title="- Products"></a>- Products</h4><ul>
+<li>Generic products：specification由开发者自己决定</li>
+<li>Customized Poducts：specification由客户决定</li>
+</ul>
+<h4 id="Essential-attributes-of-good-software"><a href="#Essential-attributes-of-good-software" class="headerlink" title="- Essential attributes of good software"></a>- Essential attributes of good software</h4><ul>
+<li>Maintainability（可维护性）: a critical attribute. <em>to meet the changing needs of customers.</em></li>
+<li>Dependability and security （可依赖性和安全性）:<ul>
+<li>可依赖性：包括<em>reliability, security and safety. Dependable software should not cause physical or economic damage in the event of system failure.</em></li>
+</ul>
+</li>
+<li>Efficiency：包括 <em>responsiveness, processing time, memory utilisation, etc.</em></li>
+<li>Acceptability（可接受性）：<em>must be understandable, usable and <strong>compatible with other systems that they use.</strong></em></li>
+</ul>
+<h4 id="定义（关键词）"><a href="#定义（关键词）" class="headerlink" title="- 定义（关键词）"></a>- 定义（关键词）</h4><ul>
+<li><p><strong>Engineering discipline</strong></p>
+<p><em>Using appropriate theories and methods to solve problems bearing in mind organizational and financial constraints.</em></p>
+</li>
+<li><p><strong>All aspects of software production</strong></p>
+<p><em>Not just technical process of development. Also project management and the development of tools, methods etc. to support software production.</em></p>
+</li>
+</ul>
+<h4 id="4个影响软件的问题"><a href="#4个影响软件的问题" class="headerlink" title="- 4个影响软件的问题"></a>- 4个影响软件的问题</h4><ul>
+<li><p><strong>Heterogeneity</strong> 异构性</p>
+<p><em>different system, different type of computer and mobile devices.</em></p>
+</li>
+<li><p><strong>Business and social change</strong></p>
+</li>
+<li><p><strong>Security and trust</strong></p>
+</li>
+<li><p><strong>Scale</strong></p>
+<p><em>Software has to be developed across a very wide range of scales</em></p>
+</li>
+</ul>
+<h4 id="SE-diversity"><a href="#SE-diversity" class="headerlink" title="- SE diversity"></a>- SE diversity</h4><p><img src="/2020/08/18/csc4001-ch1-ch2/image-20200814133947939.png" alt="image-20200814133947939"></p>
+<ul>
+<li><em>Stand-alone applications</em></li>
+<li><em>Interactive transaction-based applications</em></li>
+<li><em>Embedded control systems: <strong>数量比其他都多</strong></em></li>
+<li><em>Batch processing systems</em></li>
+<li><em>Entertainment systems</em></li>
+<li><em>Systems for modeling and simulation</em></li>
+<li><em>Data collection systems</em></li>
+<li><em>Systems of systems</em></li>
+</ul>
+<h4 id="Web-based-SE"><a href="#Web-based-SE" class="headerlink" title="- Web-based SE"></a><em>- Web-based SE</em></h4><ul>
+<li><em>Software reuse</em></li>
+<li><em>Incremental and agile development</em></li>
+<li><em>Service-oriented systems</em></li>
+<li><em>Rich interfaces</em></li>
+</ul>
+<h3 id="Software-engineering-ethics"><a href="#Software-engineering-ethics" class="headerlink" title="Software engineering ethics"></a><em>Software engineering ethics</em></h3><ul>
+<li><em>Confidentiality（机密性）</em></li>
+<li><em>Competence: 不接受超过自己能力范围的工作</em></li>
+<li><em>Intellectual property rights</em></li>
+<li><em>Computer misuse：不滥用他人计算机</em></li>
+</ul>
+<p><img src="/2020/08/18/csc4001-ch1-ch2/image-20200814140221366.png" alt="image-20200814140221366"></p>
+<h3 id="Case-studies"><a href="#Case-studies" class="headerlink" title="Case studies"></a><em>Case studies</em></h3><h1 id="Topic2-Software-Processes-软件工程"><a href="#Topic2-Software-Processes-软件工程" class="headerlink" title="Topic2 Software Processes 软件工程"></a>Topic2 Software Processes 软件工程</h1><p><strong>Process descriptions may also include:</strong></p>
+<ul>
+<li>Products：产生了什么</li>
+<li>Roles：哪些人</li>
+<li>Pre and post-conditions：影响活动的前置或后置条件</li>
+</ul>
+<p><strong>Plan-driven process</strong></p>
+<p><strong>agile process</strong></p>
+<p>大多实际开发过程两个都包括</p>
+<h3 id="Software-process-models"><a href="#Software-process-models" class="headerlink" title="Software process models"></a>Software process models</h3><p><strong>an abstract representation of a process.</strong></p>
+<h5 id="Waterfall-model（瀑布模型）-Plan-driven-model-各阶段分开"><a href="#Waterfall-model（瀑布模型）-Plan-driven-model-各阶段分开" class="headerlink" title="- Waterfall model（瀑布模型）: Plan-driven model. 各阶段分开"></a>- Waterfall model（瀑布模型）: Plan-driven model. 各阶段分开</h5><p><img src="/2020/08/18/csc4001-ch1-ch2/image-20200814203853166.png" alt="image-20200814203853166"></p>
+<p>缺点：</p>
+<ul>
+<li>Difficulty to change</li>
+<li>必须一个阶段结束进行下一阶段</li>
+</ul>
+<p>问题：</p>
+<ul>
+<li>难以适应用户需求的改变</li>
+<li>适用于大型系统工程：1. 嵌入式系统：软件必须与硬件连接交互， 2. 关键性系统：对安全性和信息安全进行全面分析， 3. 大型软件系统：多家企业共同开发</li>
+</ul>
+<h5 id="Incremental-development（增量式开发）：Specification-development-and-validation-are-interleaved-May-be-plan-driven-or-agile"><a href="#Incremental-development（增量式开发）：Specification-development-and-validation-are-interleaved-May-be-plan-driven-or-agile" class="headerlink" title="- Incremental development（增量式开发）：Specification, development and validation are interleaved. May be plan-driven or agile."></a>- Incremental development（增量式开发）：<em>Specification, development and validation are interleaved. May be plan-driven or agile.</em></h5><img src="/2020/08/18/csc4001-ch1-ch2/image-20200814205148387.png" alt="image-20200814205148387" style="zoom:33%;">
+
+<ul>
+<li>计划驱动的增量式开发：增量是提前确定的</li>
+<li>敏捷的增量式开发：早期的增量确定，后面的增量取决于进度和客户优先级</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>降低实现需求变更的成本</li>
+<li>开发过程中更容易得到客户对于已完成工作的反馈</li>
+<li>可以更快速地交付和部署有用的软件：已做完的部分可以先进行部署。</li>
+</ul>
+<p><strong>Problems</strong>:</p>
+<ul>
+<li>过程不可见</li>
+<li>随着增量的添加，系统结构会逐渐退化。建议定期进行重构。</li>
+</ul>
+<h5 id="Integration-and-configuration（集成和配置）-The-system-is-assembled-from-existing-configurable-components-（依赖于开复用的构件或系统）May-be-plan-driven-or-agile"><a href="#Integration-and-configuration（集成和配置）-The-system-is-assembled-from-existing-configurable-components-（依赖于开复用的构件或系统）May-be-plan-driven-or-agile" class="headerlink" title="- Integration and configuration（集成和配置）: The system is assembled from existing configurable components.  （依赖于开复用的构件或系统）May be plan-driven or agile."></a>- Integration and configuration（集成和配置）: <em>The system is assembled from existing configurable components.  （依赖于开复用的构件或系统）May be plan-driven or agile.</em></h5><p><strong>Types of reusable SW</strong></p>
+<ul>
+<li>Stand-alone application systems (sometimes called COTS (Commercial-off-the-shelf)) that are configured for use in a particular environment.（通用系统，但要进行调整和适配）</li>
+<li>Collections of objects that are developed as a package to be integrated with a component framework such as .NET or J2EE. （构件、包）</li>
+<li>Web services that are developed according to service standards and which are available for remote invocation.（Web服务）</li>
+</ul>
+<p><strong>Reuse-oriented SE</strong></p>
+<p><img src="/2020/08/18/csc4001-ch1-ch2/image-20200814210903197.png" alt="image-20200814210903197"></p>
+<p>优缺点：</p>
+<ul>
+<li>降低成本和风险</li>
+<li>更快开发和交付</li>
+<li>可能导致系统不完全满足用户的真实需求</li>
+<li>失去对系统构建演化的控制</li>
+</ul>
+<h3 id="Process-activities"><a href="#Process-activities" class="headerlink" title="Process activities"></a>Process activities</h3><h5 id="Requirements-engineering-process"><a href="#Requirements-engineering-process" class="headerlink" title="- Requirements engineering process"></a>- Requirements engineering process</h5><img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814211714079.png" alt="image-20200814211714079" style="zoom:50%;">
+
+<h5 id="Design-and-implementation"><a href="#Design-and-implementation" class="headerlink" title="- Design and implementation"></a>- Design and implementation</h5><ul>
+<li><strong>design</strong></li>
+</ul>
+<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814212636886.png" alt="image-20200814212636886" style="zoom:50%;">
+
+<ul>
+<li><p><strong>activities</strong></p>
+<ul>
+<li>Architectural design</li>
+<li>Database design</li>
+<li>Interface design</li>
+<li>Component selection and design</li>
+</ul>
+</li>
+<li><p><strong>Implementation</strong></p>
+<p>Design and implementation交叉进行</p>
+<p>Programming是个人化活动，没有标准</p>
+<p>Debugging是找出错误并修正</p>
+</li>
+</ul>
+<h5 id="Validation-（又叫verification-and-validation验证是否符合specification和是否符合requirements-of-system-customer）"><a href="#Validation-（又叫verification-and-validation验证是否符合specification和是否符合requirements-of-system-customer）" class="headerlink" title="- Validation （又叫verification and validation验证是否符合specification和是否符合requirements of system customer）"></a>- Validation （又叫verification and validation验证是否符合specification和是否符合requirements of system customer）</h5><p><strong>Testing is the most commonly used V&amp;V activity.</strong></p>
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200814213511772.png" alt="image-20200814213511772" style="zoom:33%;">
+
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200814215826571.png" alt="image-20200814215826571" style="zoom: 50%;">
+
+<h5 id="SW-evolution"><a href="#SW-evolution" class="headerlink" title="- SW evolution"></a>- SW evolution</h5><p>SW flexible and can change</p>
+<p>现在很少有软件系统是全新的，开发和维护更像是连续的过程。</p>
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200814220347114.png" alt="image-20200814220347114" style="zoom:50%;">
+
+<h3 id="Coping-with-change"><a href="#Coping-with-change" class="headerlink" title="Coping with change"></a>Coping with change</h3><p><strong>Costs of change</strong>:</p>
+<ul>
+<li>Rework</li>
+<li>Costs of implementing new functionality</li>
+</ul>
+<p><strong>降低Rework成本的方法</strong>：</p>
+<ul>
+<li><strong>Change anticipation （需求预测）</strong></li>
+<li><strong>Change tolerance（需求容忍）</strong> </li>
+</ul>
+<h5 id="两种应对变化的方法："><a href="#两种应对变化的方法：" class="headerlink" title="两种应对变化的方法："></a><strong>两种应对变化的方法</strong>：</h5><h5 id="System-prototyping"><a href="#System-prototyping" class="headerlink" title="- System prototyping"></a>- System prototyping</h5><p><em>This approach supports change anticipation.</em></p>
+<p><strong>Protype</strong>: an initial version of a system used to demonstrate concepts and try out design options</p>
+<p><strong>可以被用在</strong>：</p>
+<ul>
+<li>requirements engineering process to help with requirements elicatation and validation</li>
+<li>design processes to explore options and develop a UI design</li>
+<li>testing process to run back-to-back tests</li>
+</ul>
+<p><strong>优点：</strong></p>
+<ul>
+<li>Improved system usability</li>
+<li>A closer match to users’ real needs</li>
+<li>Improved design quality</li>
+<li>Improved maintainability</li>
+<li>Reduced development effort</li>
+</ul>
+<p><img src="/2020/08/18/csc4001-ch1-ch2/image-20200815102755198.png" alt="image-20200815102755198"></p>
+<p><strong>Prototype development</strong>:</p>
+<ul>
+<li>May be based on rapid prototyping languages or tools</li>
+<li>May involve leaving out functionality</li>
+</ul>
+<p><strong>Throw-away prototypes</strong></p>
+<p>Prototypes should be <strong>discarded after development</strong> as they are not a good basis for a production system.</p>
+<h5 id="Incremental-delivery"><a href="#Incremental-delivery" class="headerlink" title="- Incremental delivery"></a>- Incremental delivery</h5><p><em>This supports both change avoidance and change tolerance.</em></p>
+<ul>
+<li>开发过程被分成不同的增量</li>
+<li>User requirements are prioritized: 优先级最高的需求即为最优先的增量</li>
+</ul>
+<p>一旦某个增量开始开发，需求就被冻结，但之后的增量还可以改变</p>
+<p><img src="/2020/08/18/csc4001-ch1-ch2/image-20200815103904135.png" alt="image-20200815103904135"></p>
+<p><strong>增量开发和增量交付：增量交付始终有可用的版本和功能</strong></p>
+<p><img src="/2020/08/18/csc4001-ch1-ch2/image-20200815104253226.png" alt="image-20200815104253226"></p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>Customer value can be delivered with each increment so system functionality is available earlier.</li>
+<li>Early increments act as a prototype to help elicit requirements for later increments.</li>
+<li>Lower risk of overall project failure.</li>
+<li>The highest priority system services tend to receive the most testing.</li>
+</ul>
+<p><strong>问题</strong></p>
+<ul>
+<li>Most systems require a set of basic facilities that are used by different parts of the system.（在增量开始实现前，需求并没有详细定义，很难确定common facilities that are needed by all increments）</li>
+<li>The essence of iterative processes is that the specification is developed in conjunction with the software.（与许多组织的采购方式冲突，通常规格说明也是系统开发合约的一部分，但增量式开发直到最终增量需求确定前都没有完整的系统规格说明，大客户可能无法接受）</li>
+</ul>
+<h3 id="Process-improvement"><a href="#Process-improvement" class="headerlink" title="Process improvement"></a>Process improvement</h3><p><em>A way of enhancing the quality of their software, reducing costs or accelerating their development processes.</em></p>
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200815111521890.png" alt="image-20200815111521890" style="zoom:33%;">
+
+
+
+<p><strong>方法：</strong></p>
+<ul>
+<li><p><strong>The process maturity approach</strong></p>
+<p><em>Focuses on improving process and project management and introducing good software engineering practice.</em></p>
+</li>
+</ul>
+<ul>
+<li><strong>The agile approach</strong></li>
+</ul>
+<p><em>The primary characteristics of agile methods are rapid delivery of functionality and responsiveness to changing customer requirements.</em></p>
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200815115308831.png" alt="image-20200815115308831" style="zoom:50%;">
+
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200815115319685.png" alt="image-20200815115319685" style="zoom:50%;">
+
+<h3 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h3><h4 id="CH1"><a href="#CH1" class="headerlink" title="CH1"></a>CH1</h4><ul>
+<li><p><strong>软件工程是一门覆盖软件生产的各个方面的工程学科</strong></p>
+</li>
+<li><p>软件不仅是程序，还包括系统用户、质量保证人员以及开发者所需要的所有电子文档。</p>
+<p><strong>软件产品的基本属性是可维护性、可依赖性、安全信息姓、效率以及可接受性。</strong></p>
+</li>
+<li><p><strong>软件过程包括软件开发过程中所涉及的所有活动。**</strong>软件规格说明、开发、确认和演化这些高层活动是所有软件过程中的一部分。**</p>
+</li>
+<li><p>世界上存在很多不同类型的系统。每一种类型的系统的开发都需要一种与之相适应的软件工程工具和技术。几乎不存在适用于所有类型的系统的软件设计和实现技术。</p>
+</li>
+<li><p>软件工程的基本思想适用于所有的软件系统。<strong>这些基本思想包括受管理的软件过程、软件的可依赖性和信息安全性、需求工程和软件复用。</strong></p>
+</li>
+<li><p>软件工程师对软件工程行业和整个社会负有责任，不应该只关心技术问题，而应该对影响他们工作的到的问题有所知晓。</p>
+</li>
+<li><p>职业协会发布的行为准则定义了到的和职业标准。这些准则为协会成员设定了所期望的行为标准。</p>
+</li>
+</ul>
+<h4 id="CH2"><a href="#CH2" class="headerlink" title="CH2"></a>CH2</h4><ul>
+<li><strong>软件过程是生产一个软件系统过程中所包含的一系列活动。软件过程模型是这些过程的抽象表示。</strong></li>
+<li>通用过程模型描述软件过程的组织。这些通用过程模型的例子包括<strong>瀑布模型、增量式开发、可复用构建配置与集成等。</strong></li>
+<li>需求工程是开发软件规格说明的过程。规格说明的目的是向开发者传达客户方对于系统的需要。</li>
+<li><strong>设计和实现过程是将需求规格说明转换为一个可运行的软件系统的过程。</strong></li>
+<li><strong>软件确认是检查系统是否符合他的规格说明以及是否符合系统用户的真实需要的过程。</strong></li>
+<li><strong>软件演化发生在修改已有的软件系统以满足新的需求的时候。</strong>变化是持续的，软件必须演化以保持有用性。</li>
+<li><strong>过程应该包含应对变化的活动。</strong>可能包含一个<strong>原型构造</strong>阶段，这回有助于避免在需求和设计上的错误决策。过程可以<strong>按照迭代化开发和交付进行组织</strong>，这样变更可以在不影响系统整体的情况下进行。</li>
+<li><strong>过程改进是改进现有的软件过程以提高软件质量、降低开发成本、缩短开发时间的过程。过程改进是一个循环式的过程，包括过程度量、分析、和改变。</strong></li>
+</ul>
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200815115349082.png" alt="image-20200815115349082" style="zoom:50%;">
+
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200815115359067.png" alt="image-20200815115359067" style="zoom:50%;">
+
+<img src="/2020/08/18/csc4001-ch1-ch2/image-20200815115412123.png" alt="image-20200815115412123" style="zoom:50%;">
+
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Topic-1-Intro"><span class="toc-number">1.</span> <span class="toc-text">Topic 1  Intro</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cost"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">- cost</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Failure%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">- Failure原因</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Professional-software-development"><span class="toc-number">1.0.1.</span> <span class="toc-text">Professional software development</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Products"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">- Products</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Essential-attributes-of-good-software"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">- Essential attributes of good software</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%EF%BC%88%E5%85%B3%E9%94%AE%E8%AF%8D%EF%BC%89"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">- 定义（关键词）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E4%B8%AA%E5%BD%B1%E5%93%8D%E8%BD%AF%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">- 4个影响软件的问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SE-diversity"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">- SE diversity</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Web-based-SE"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">- Web-based SE</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Software-engineering-ethics"><span class="toc-number">1.0.2.</span> <span class="toc-text">Software engineering ethics</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Case-studies"><span class="toc-number">1.0.3.</span> <span class="toc-text">Case studies</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Topic2-Software-Processes-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">Topic2 Software Processes 软件工程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Software-process-models"><span class="toc-number">2.0.1.</span> <span class="toc-text">Software process models</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Waterfall-model%EF%BC%88%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B%EF%BC%89-Plan-driven-model-%E5%90%84%E9%98%B6%E6%AE%B5%E5%88%86%E5%BC%80"><span class="toc-number">2.0.1.0.1.</span> <span class="toc-text">- Waterfall model（瀑布模型）: Plan-driven model. 各阶段分开</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Incremental-development%EF%BC%88%E5%A2%9E%E9%87%8F%E5%BC%8F%E5%BC%80%E5%8F%91%EF%BC%89%EF%BC%9ASpecification-development-and-validation-are-interleaved-May-be-plan-driven-or-agile"><span class="toc-number">2.0.1.0.2.</span> <span class="toc-text">- Incremental development（增量式开发）：Specification, development and validation are interleaved. May be plan-driven or agile.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Integration-and-configuration%EF%BC%88%E9%9B%86%E6%88%90%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%89-The-system-is-assembled-from-existing-configurable-components-%EF%BC%88%E4%BE%9D%E8%B5%96%E4%BA%8E%E5%BC%80%E5%A4%8D%E7%94%A8%E7%9A%84%E6%9E%84%E4%BB%B6%E6%88%96%E7%B3%BB%E7%BB%9F%EF%BC%89May-be-plan-driven-or-agile"><span class="toc-number">2.0.1.0.3.</span> <span class="toc-text">- Integration and configuration（集成和配置）: The system is assembled from existing configurable components.  （依赖于开复用的构件或系统）May be plan-driven or agile.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Process-activities"><span class="toc-number">2.0.2.</span> <span class="toc-text">Process activities</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Requirements-engineering-process"><span class="toc-number">2.0.2.0.1.</span> <span class="toc-text">- Requirements engineering process</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Design-and-implementation"><span class="toc-number">2.0.2.0.2.</span> <span class="toc-text">- Design and implementation</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Validation-%EF%BC%88%E5%8F%88%E5%8F%ABverification-and-validation%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E7%AC%A6%E5%90%88specification%E5%92%8C%E6%98%AF%E5%90%A6%E7%AC%A6%E5%90%88requirements-of-system-customer%EF%BC%89"><span class="toc-number">2.0.2.0.3.</span> <span class="toc-text">- Validation （又叫verification and validation验证是否符合specification和是否符合requirements of system customer）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SW-evolution"><span class="toc-number">2.0.2.0.4.</span> <span class="toc-text">- SW evolution</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Coping-with-change"><span class="toc-number">2.0.3.</span> <span class="toc-text">Coping with change</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%A4%E7%A7%8D%E5%BA%94%E5%AF%B9%E5%8F%98%E5%8C%96%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">2.0.3.0.1.</span> <span class="toc-text">两种应对变化的方法：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#System-prototyping"><span class="toc-number">2.0.3.0.2.</span> <span class="toc-text">- System prototyping</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Incremental-delivery"><span class="toc-number">2.0.3.0.3.</span> <span class="toc-text">- Incremental delivery</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Process-improvement"><span class="toc-number">2.0.4.</span> <span class="toc-text">Process improvement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Review"><span class="toc-number">2.0.5.</span> <span class="toc-text">Review</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CH1"><span class="toc-number">2.0.5.1.</span> <span class="toc-text">CH1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CH2"><span class="toc-number">2.0.5.2.</span> <span class="toc-text">CH2</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&text=csc4001 ch1&amp;ch2"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&is_video=false&description=csc4001 ch1&amp;ch2"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=csc4001 ch1&amp;ch2&body=Check out this article: http://yoursite.com/2020/08/18/csc4001-ch1-ch2/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&title=csc4001 ch1&amp;ch2"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&name=csc4001 ch1&amp;ch2&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/08/18/csc4001-ch1-ch2/&t=csc4001 ch1&amp;ch2"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2020
+    xxx_xiang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
