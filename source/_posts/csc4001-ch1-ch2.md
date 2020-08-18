@@ -1,18 +1,17 @@
 ---
-title: 4001ch1&ch2
-date: 2020-08-17 21:37:28
+title: csc4001 ch1&ch2
+date: 2020-08-18 20:14:35
 tags: csc4001
 ---
-
 # Topic 1  Intro
 
-#### cost
+#### - cost
 
 - 软件高于硬件 on a PC
 - cost more to maintain than develop
 - SE is concerned with cost-effective software development.
 
-#### Failure原因
+#### - Failure原因
 
 - Increasing system complexity
 - Failure to use SE method
@@ -39,12 +38,10 @@ tags: csc4001
   - *development*: **design and program**
   - *validation*: **check**
   - *evolution*: **modify**
+  - **Cost**
+    - 60% development, 40% testing.
 
-- **Cost**
-
-  - 60% development, 40% testing.
-
----
+  ------
 
 - **What is the difference between software engineering and computer science?**
 
@@ -54,7 +51,7 @@ tags: csc4001
 
   System Engineering is concerned with all aspects of computer-based systems development including hardware, software and process engineering. Software Engineering is part of this more general process.
 
-- **What are the best software engineering techniques and methods? ** 没有最好的
+- **What are the best software engineering techniques and methods?**  没有最好的
 
   Different techniques are appropriate for different types of system. You can’t,therefore, say that one method is better than another.
 
@@ -64,12 +61,12 @@ tags: csc4001
 
   led to important advances in programming languages and software reuse.
 
-##### Products
+#### - Products
 
 - Generic products：specification由开发者自己决定
 - Customized Poducts：specification由客户决定
 
-##### Essential attributes of good software
+#### - Essential attributes of good software
 
 - Maintainability（可维护性）: a critical attribute. *to meet the changing needs of customers.*
 - Dependability and security （可依赖性和安全性）:
@@ -77,21 +74,21 @@ tags: csc4001
 - Efficiency：包括 *responsiveness, processing time, memory utilisation, etc.*
 - Acceptability（可接受性）：*must be understandable, usable and **compatible with other systems that they use.***
 
-##### 定义（关键词）
+#### - 定义（关键词）
 
 - **Engineering discipline**
 
-  Using appropriate theories and methods to solve problems bearing in mind organizational and financial constraints.
+  *Using appropriate theories and methods to solve problems bearing in mind organizational and financial constraints.*
 
 - **All aspects of software production**
 
-  Not just technical process of development. Also project management and the development of tools, methods etc. to support software production.
+  *Not just technical process of development. Also project management and the development of tools, methods etc. to support software production.*
 
-##### 4个影响软件的问题
+#### - 4个影响软件的问题
 
 - **Heterogeneity** 异构性
 
-  different system, different type of computer and mobile devices.
+  *different system, different type of computer and mobile devices.*
 
 - **Business and social change**
 
@@ -101,38 +98,38 @@ tags: csc4001
 
   *Software has to be developed across a very wide range of scales*
 
-##### SE diversity
+#### - SE diversity
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814133947939.png" alt="image-20200814133947939" style="zoom: 50%;" />
+![image-20200814133947939](csc4001-ch1-ch2/image-20200814133947939.png)
 
-- Stand-alone applications
-- Interactive transaction-based applications
-- Embedded control systems: **数量比其他都多**
-- Batch processing systems
-- Entertainment systems
-- Systems for modeling and simulation
-- Data collection systems
-- Systems of systems
+- *Stand-alone applications*
+- *Interactive transaction-based applications*
+- *Embedded control systems: **数量比其他都多***
+- *Batch processing systems*
+- *Entertainment systems*
+- *Systems for modeling and simulation*
+- *Data collection systems*
+- *Systems of systems*
 
-##### Web-based SE
+#### *- Web-based SE*
 
-- Software reuse
-- Incremental and agile development
-- Service-oriented systems
-- Rich interfaces
+- *Software reuse*
+- *Incremental and agile development*
+- *Service-oriented systems*
+- *Rich interfaces*
 
-### Software engineering ethics
+### *Software engineering ethics*
 
-- Confidentiality（机密性）
-- Competence: 不接受超过自己能力范围的工作
-- Intellectual property rights
-- Computer misuse：不滥用他人计算机
+- *Confidentiality（机密性）*
+- *Competence: 不接受超过自己能力范围的工作*
+- *Intellectual property rights*
+- *Computer misuse：不滥用他人计算机*
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814140221366.png" alt="image-20200814140221366" style="zoom:50%;" />
+![image-20200814140221366](csc4001-ch1-ch2/image-20200814140221366.png)
 
 
 
-### Case studies
+### *Case studies*
 
 
 
@@ -160,7 +157,7 @@ tags: csc4001
 
 ##### - Waterfall model（瀑布模型）: Plan-driven model. 各阶段分开
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814203853166.png" alt="image-20200814203853166" style="zoom: 33%;" />
+![image-20200814203853166](csc4001-ch1-ch2/image-20200814203853166.png)
 
 缺点：
 
@@ -174,7 +171,7 @@ tags: csc4001
 
 ##### - Incremental development（增量式开发）：*Specification, development and validation are interleaved. May be plan-driven or agile.*
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814205148387.png" alt="image-20200814205148387" style="zoom:33%;" />
+<img src="csc4001-ch1-ch2/image-20200814205148387.png" alt="image-20200814205148387" style="zoom:33%;" />
 
 - 计划驱动的增量式开发：增量是提前确定的
 - 敏捷的增量式开发：早期的增量确定，后面的增量取决于进度和客户优先级
@@ -200,7 +197,7 @@ tags: csc4001
 
 **Reuse-oriented SE**
 
-![image-20200814210903197](/Users/项君杰/Library/Application Support/typora-user-images/image-20200814210903197.png)
+![image-20200814210903197](csc4001-ch1-ch2/image-20200814210903197.png)
 
 优缺点：
 
@@ -240,9 +237,9 @@ tags: csc4001
 
 **Testing is the most commonly used V&V activity.**
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814213511772.png" alt="image-20200814213511772" style="zoom:33%;" />
+<img src="csc4001-ch1-ch2/image-20200814213511772.png" alt="image-20200814213511772" style="zoom:33%;" />
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814215826571.png" alt="image-20200814215826571" style="zoom: 50%;" />
+<img src="csc4001-ch1-ch2/image-20200814215826571.png" alt="image-20200814215826571" style="zoom: 50%;" />
 
 ##### - SW evolution
 
@@ -250,9 +247,7 @@ SW flexible and can change
 
 现在很少有软件系统是全新的，开发和维护更像是连续的过程。
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200814220347114.png" alt="image-20200814220347114" style="zoom:50%;" />
-
-
+<img src="csc4001-ch1-ch2/image-20200814220347114.png" alt="image-20200814220347114" style="zoom:50%;" />
 
 ### Coping with change
 
@@ -264,7 +259,7 @@ SW flexible and can change
 **降低Rework成本的方法**：
 
 - **Change anticipation （需求预测）**
-- **Change tolerance（需求容忍） **
+- **Change tolerance（需求容忍）** 
 
 ##### **两种应对变化的方法**：
 
@@ -288,7 +283,7 @@ SW flexible and can change
 - Improved maintainability
 - Reduced development effort
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815102755198.png" alt="image-20200815102755198" style="zoom:50%;" />
+![image-20200815102755198](csc4001-ch1-ch2/image-20200815102755198.png)
 
 **Prototype development**:
 
@@ -308,11 +303,11 @@ Prototypes should be **discarded after development** as they are not a good basi
 
 一旦某个增量开始开发，需求就被冻结，但之后的增量还可以改变
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815103904135.png" alt="image-20200815103904135" style="zoom:50%;" />
+![image-20200815103904135](csc4001-ch1-ch2/image-20200815103904135.png)
 
 **增量开发和增量交付：增量交付始终有可用的版本和功能**
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815104253226.png" alt="image-20200815104253226" style="zoom:50%;" />
+![image-20200815104253226](csc4001-ch1-ch2/image-20200815104253226.png)
 
 **优点：**
 
@@ -330,7 +325,7 @@ Prototypes should be **discarded after development** as they are not a good basi
 
 *A way of enhancing the quality of their software, reducing costs or accelerating their development processes.*
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815111521890.png" alt="image-20200815111521890" style="zoom:33%;" />
+<img src="csc4001-ch1-ch2/image-20200815111521890.png" alt="image-20200815111521890" style="zoom:33%;" />
 
 
 
@@ -346,15 +341,44 @@ Prototypes should be **discarded after development** as they are not a good basi
 
 *The primary characteristics of agile methods are rapid delivery of functionality and responsiveness to changing customer requirements.*
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815115308831.png" alt="image-20200815115308831" style="zoom:50%;" />
+<img src="csc4001-ch1-ch2/image-20200815115308831.png" alt="image-20200815115308831" style="zoom:50%;" />
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815115319685.png" alt="image-20200815115319685" style="zoom:50%;" />
+<img src="csc4001-ch1-ch2/image-20200815115319685.png" alt="image-20200815115319685" style="zoom:50%;" />
 
 ### Review
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815115349082.png" alt="image-20200815115349082" style="zoom:50%;" />
+#### CH1
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815115359067.png" alt="image-20200815115359067" style="zoom:50%;" />
+- **软件工程是一门覆盖软件生产的各个方面的工程学科**
 
-<img src="/Users/项君杰/Library/Application Support/typora-user-images/image-20200815115412123.png" alt="image-20200815115412123" style="zoom:50%;" />
+- 软件不仅是程序，还包括系统用户、质量保证人员以及开发者所需要的所有电子文档。
+
+  **软件产品的基本属性是可维护性、可依赖性、安全信息姓、效率以及可接受性。**
+
+- **软件过程包括软件开发过程中所涉及的所有活动。****软件规格说明、开发、确认和演化这些高层活动是所有软件过程中的一部分。**
+
+- 世界上存在很多不同类型的系统。每一种类型的系统的开发都需要一种与之相适应的软件工程工具和技术。几乎不存在适用于所有类型的系统的软件设计和实现技术。
+
+- 软件工程的基本思想适用于所有的软件系统。**这些基本思想包括受管理的软件过程、软件的可依赖性和信息安全性、需求工程和软件复用。**
+
+- 软件工程师对软件工程行业和整个社会负有责任，不应该只关心技术问题，而应该对影响他们工作的到的问题有所知晓。
+
+- 职业协会发布的行为准则定义了到的和职业标准。这些准则为协会成员设定了所期望的行为标准。
+
+#### CH2
+
+- **软件过程是生产一个软件系统过程中所包含的一系列活动。软件过程模型是这些过程的抽象表示。**
+- 通用过程模型描述软件过程的组织。这些通用过程模型的例子包括**瀑布模型、增量式开发、可复用构建配置与集成等。**
+- 需求工程是开发软件规格说明的过程。规格说明的目的是向开发者传达客户方对于系统的需要。
+- **设计和实现过程是将需求规格说明转换为一个可运行的软件系统的过程。**
+- **软件确认是检查系统是否符合他的规格说明以及是否符合系统用户的真实需要的过程。**
+- **软件演化发生在修改已有的软件系统以满足新的需求的时候。**变化是持续的，软件必须演化以保持有用性。
+- **过程应该包含应对变化的活动。**可能包含一个**原型构造**阶段，这回有助于避免在需求和设计上的错误决策。过程可以**按照迭代化开发和交付进行组织**，这样变更可以在不影响系统整体的情况下进行。
+- **过程改进是改进现有的软件过程以提高软件质量、降低开发成本、缩短开发时间的过程。过程改进是一个循环式的过程，包括过程度量、分析、和改变。**
+
+<img src="csc4001-ch1-ch2/image-20200815115349082.png" alt="image-20200815115349082" style="zoom:50%;" />
+
+<img src="csc4001-ch1-ch2/image-20200815115359067.png" alt="image-20200815115359067" style="zoom:50%;" />
+
+<img src="csc4001-ch1-ch2/image-20200815115412123.png" alt="image-20200815115412123" style="zoom:50%;" />
 
