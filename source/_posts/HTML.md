@@ -237,7 +237,7 @@ Radio buttons let a user select ONLY ONE of a limited number of choices
 
 根据浏览器支持，输入字段能够显示为滑块控件。
 
-<img src="/Users/项君杰/Desktop/myBlog/xiangjunjie111.github.io/source/_posts/HTML/image-20200903160947432.png" alt="image-20200903160947432" style="zoom:50%;" />
+<img src="/HTML/image-20200903160947432.png" alt="image-20200903160947432" style="zoom:50%;" />
 
 ### input 属性
 
