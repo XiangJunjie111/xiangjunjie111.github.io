@@ -3,6 +3,8 @@ title: csc4001 ch1&ch2
 date: 2020-08-18 20:14:35
 tags: csc4001
 ---
+[TOC]
+
 # Topic 1  Intro
 
 #### - cost
